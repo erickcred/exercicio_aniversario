@@ -1,0 +1,50 @@
+@use "../variaveis";
+
+.form {
+    color: darken(variaveis.$corBotaoPrincipal, 20);
+    width: 550px;
+
+    
+    &__cadastro {
+        margin-bottom: 35px;
+        position: relative;
+
+        &__input, label {
+            color: darken(variaveis.$corBotaoPrincipal, 20);
+            font-size: 18px;
+            display: block;
+            font-weight: bold;
+        }
+
+        label {
+            position: absolute;
+            bottom: 10px;
+            left: 16px;
+            transition: all ease .6s;
+        }
+
+        &__input {
+            border: none;
+            border-bottom: 3px solid;
+            border-color: variaveis.$corBotaoPrincipal;
+            padding: 8px 16px;
+            width: 100%;
+
+            &:focus {
+                border-bottom: 3px solid;
+                border-color: variaveis.$corBotaoPrincipal;
+                outline-color: transparent;
+            }
+            
+        }
+        
+        &--is-up {
+            label {
+                color: darken(variaveis.$corBotaoPrincipal, 40);
+                visibility: visible;
+                left: 0;
+                bottom: 40px;
+            }
+        }
+    }
+}

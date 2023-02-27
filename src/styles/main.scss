@@ -1,16 +1,22 @@
 @use "variaveis";
 @use "hero";
+@use "components/button";
+@use "components/form";
 
 * {
     box-sizing: border-box;
-    color: variaveis.$colorTextPricipal;
+    color: variaveis.$corTextoPricipal;
     margin: 0;
     padding: 0;
-    font-family: "Arial";
+    font-family: variaveis.$fontShantellSans;
 }
 
 .container {
     max-width: 1024px;
     width: 90%;
     margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
 }

@@ -1,3 +1,5 @@
+@use "variaveis";
+
 .hero {
     background-image: url(../images/header_bg.jpg);
     background-repeat: no-repeat;
@@ -22,19 +24,22 @@
     }
 
     &__content {
-        background-color: rgba(255, 255, 255, .5);
+        background-color: rgba(variaveis.$corTextoPricipal, .8);
+        color: variaveis.$corTextoSecundario;
+        font-size: 32px;
+        font-weight: bold;
         border-radius: 5px;
         display: flex;
         justify-content: space-between;
+        width: 50%;
+        padding: 16px;
         
         span {
-            color: #000;
+            color: variaveis.$corTextoSecundario;
             font-size: 32px;
             font-weight: bold;
         }
 
 
-        width: 50%;
-        padding: 16px;
     }
 }

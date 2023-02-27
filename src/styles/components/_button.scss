@@ -1,0 +1,23 @@
+@use "../variaveis";
+
+.button {
+    background-color: transparent;
+    color: variaveis.$corTextoSecundario;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    font-size: 17px;
+    font-weight: bolder;
+    text-decoration: none;
+    margin: 16px 0;
+    padding: 18px;
+
+    &__principal {
+        background-color: variaveis.$corBotaoPrincipal;
+
+        &:hover {
+            background-color: lighten(variaveis.$corBotaoPrincipal, 15);
+        }
+    }
+}

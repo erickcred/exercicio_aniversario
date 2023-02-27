@@ -20,9 +20,39 @@
                 <span id="minutos"></span>
                 <span id="segundos"></span>
             </div>
+
+            <a href="#cadastro" class="button button__principal">Confirmar presença</a>
         </div>
     </header>
+
+
+    <section id="cadastro">
+        <div class="container">
+
+            <form class="form" action="" method="post">
+
+                <div class="form__cadastro">
+                    <label for="nome">Nome: </label>
+                    <input class="form__cadastro__input" type="text" name="nome">
+                </div>
+
+                <div class="form__cadastro">
+                    <label for="telefone">Telefone: </label>
+                    <input class="form__cadastro__input" type="tel" name="telefone">
+                </div>
+
+                <div class="form__cadastro">
+                    <label for="quantidade">Quantas crianças?: </label>
+                    <input class="form__cadastro__input" type="number" name="quantidade">
+                </div>
+                <button class="button button__principal">Confirmar precença</button>
+            </form>
+
+        </div>
+    </section>
     
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
     <script src="./scripts/main.js"></script>
 </body>
