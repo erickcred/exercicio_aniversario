@@ -1,0 +1,35 @@
+@use "variaveis";
+
+.diversao {
+
+    &__conteudo {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        flex-direction: row;
+        
+        &__imagem {
+            border-radius: 10px;
+        }
+        
+        h2 {
+            color: darken(variaveis.$corBotaoPrincipal, 40);
+            margin-bottom: 20px;
+        }
+        
+        &__list {
+            padding-left: 16px;
+            
+            &__item {
+                font-size: 18px;
+                margin-bottom: 5px;
+            }
+            
+        }
+
+        &--image-left {
+            flex-direction: row-reverse;
+        }
+    }
+    
+}

@@ -1,3 +1,5 @@
+AOS.init();
+
 $(document).ready(function() {
     const dataEvento = new Date("Jul 05, 2023 09:00:00");
     const timeStampEvento = dataEvento.getTime();

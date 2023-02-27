@@ -2,6 +2,7 @@
 @use "hero";
 @use "components/button";
 @use "components/form";
+@use "diversao";
 
 * {
     box-sizing: border-box;
@@ -18,5 +19,6 @@
 }
 
 section {
+    background-color: rgba(#4B1320, .5);
     padding: 80px 0;
 }

@@ -2,7 +2,7 @@
 
 .button {
     background-color: transparent;
-    color: variaveis.$corTextoSecundario;
+    color: darken(variaveis.$corBotaoPrincipal, 40);
     cursor: pointer;
     border: none;
     border-radius: 5px;

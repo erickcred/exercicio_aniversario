@@ -14,7 +14,7 @@
         position: relative;
 
         &__input, label {
-            color: darken(variaveis.$corBotaoPrincipal, 20);
+            color: lighten(variaveis.$corBotaoPrincipal, 30);
             font-size: 18px;
             display: block;
             font-weight: bold;
@@ -28,6 +28,7 @@
         }
 
         &__input {
+            background-color: transparent;
             border: none;
             border-bottom: 3px solid;
             border-color: variaveis.$corBotaoPrincipal;
@@ -37,7 +38,7 @@
             &:focus {
                 border-bottom: 3px solid;
                 border-color: variaveis.$corBotaoPrincipal;
-                outline-color: transparent;
+                outline: transparent;
             }
             
         }

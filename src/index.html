@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birthday Project</title>
 
+    <!-- AOS Animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <link rel="stylesheet" href="./styles/main.scss">
 </head>
 <body>
@@ -25,11 +28,50 @@
         </div>
     </header>
 
+    <section calss="diversao">
+        <div class="container">
+            <div data-aos="zoom-in-up" data-aos-duration="1500">
+                <div class="diversao__conteudo">
+                    <img class="diversao__conteudo__imagem" src="https://via.placeholder.com/450x300" alt="">
+                    <div>
+                        <h2>Entreterimento para crianças</h2>
+                        <ul class="diversao__conteudo__list">
+                            <li class="diversao__conteudo__list__item">Cama elastica</li>
+                            <li class="diversao__conteudo__list__item">Psina de bolinha</li>
+                            <li class="diversao__conteudo__list__item">Video games</li>
+                            <li class="diversao__conteudo__list__item">Sessão de desenhos</li>
+                            <li class="diversao__conteudo__list__item">Sessão de animes</li>
+                            <li class="diversao__conteudo__list__item">Caça ao tesouro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="diversao">
+        <div class="container">
+            <div data-aos="zoom-in-up" data-aos-duration="1500">
+                <div class="diversao__conteudo diversao__conteudo--image-left">
+                    <img class="diversao__conteudo__imagem" src="https://via.placeholder.com/450x300" alt="">
+                    <div>
+                        <h2>Ambientes</h2>
+                        <ul class="diversao__conteudo__list">
+                            <li class="diversao__conteudo__list__item">Psina</li>
+                            <li class="diversao__conteudo__list__item">Sale de jogos</li>
+                            <li class="diversao__conteudo__list__item">Restaurante</li>
+                            <li class="diversao__conteudo__list__item">Aras</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section id="cadastro">
         <div class="container">
 
-            <form class="form" action="" method="post">
+            <form class="form" action="" method="post"  data-aos="fade-right" data-aos-duration="1800">
 
                 <div class="form__cadastro">
                     <label for="nome">Nome: </label>
@@ -53,7 +95,8 @@
     
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-
+    <!-- AOS Animations -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
