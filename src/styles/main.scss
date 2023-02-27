@@ -1,0 +1,16 @@
+@use "variaveis";
+@use "hero";
+
+* {
+    box-sizing: border-box;
+    color: variaveis.$colorTextPricipal;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial";
+}
+
+.container {
+    max-width: 1024px;
+    width: 90%;
+    margin: 0 auto;
+}
