@@ -5,8 +5,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding: 70px 0 100px 0;
+    text-align: center;
 
     min-height: 450px;
+
+    @media (max-width: 768px) {
+        background-position: center;
+    }
 
     .container {
         display: flex;
@@ -33,6 +38,15 @@
         justify-content: space-between;
         width: 50%;
         padding: 16px;
+
+        @media (max-width: 768px) {
+            width: 100%;
+        }
+        @media (max-width: 450px) {
+            width: 200px;
+            flex-direction: column;
+            gap: 16px;
+        }
         
         span {
             color: variaveis.$corTextoSecundario;
